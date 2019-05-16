@@ -1,6 +1,8 @@
 <?php
 
-namespace WhensMyFerry;
+declare(strict_types=1);
+
+namespace WhensMyFerry\Data\Users;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
