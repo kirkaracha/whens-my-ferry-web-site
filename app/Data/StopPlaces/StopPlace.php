@@ -4,9 +4,25 @@ declare(strict_types=1);
 
 namespace WhensMyFerry\Data\StopPlaces;
 
-use WhensMyFerry\Data\BaseModel;
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class StopPlace extends BaseModel
+/**
+ * WhensMyFerry\Data\StopPlaces\StopPlace
+ *
+ * @method static Builder|StopPlace newModelQuery()
+ * @method static Builder|StopPlace newQuery()
+ * @method static Builder|StopPlace query()
+ */
+class StopPlace extends Eloquent
 {
-    //
+    use SoftDeletes;
+
+    protected $fillable = [
+    ];
+
+    protected $hidden = [
+        'id'
+    ];
 }

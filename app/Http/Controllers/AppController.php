@@ -6,7 +6,7 @@ namespace WhensMyFerry\Http\Controllers;
 
 use Illuminate\View\View;
 
-class AppController
+class AppController extends Controller
 {
     public function index(): View
     {

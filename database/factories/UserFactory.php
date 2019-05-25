@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-
-use WhensMyFerry\Data\Users\User;
-use Illuminate\Support\Str;
 use Faker\Generator as Faker;
+use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Support\Str;
+use WhensMyFerry\Data\Users\User;
+
+/* @var $factory Factory */
 
 $factory->define(User::class, function (Faker $faker) {
     return [
